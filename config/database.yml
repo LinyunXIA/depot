@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: depot_production
-  username: depot
-  password: <%= ENV["DEPOT_DATABASE_PASSWORD"] %>
+  username: <%= ENV["TRACKER7OS_DATABASE_NAME"] %>
+  password: <%= ENV["TRACKER7OS_DATABASE_PASSWORD"] %>
